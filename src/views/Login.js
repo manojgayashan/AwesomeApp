@@ -361,13 +361,7 @@ export default function Login() {
         </TouchableOpacity>  
 
        <Text style={[commanStyles.graytext,{textAlign:'center',paddingVertical:10}]}>Or</Text> 
-
-       <TouchableOpacity style={commanStyles.buttonSocial} onPress={()=>instagramLogin.show()}>
-            <View style={commanStyles.row}>
-                <Feather name={'instagram'} size={17} color={'black'} />
-                <Text style={commanStyles.blacktext}> Login with Instagram</Text>
-            </View>
-        </TouchableOpacity>   
+  
 
         <InstagramLogin
         ref={ref => (instagramLogin = ref)}
@@ -387,6 +381,12 @@ export default function Login() {
             </View>
         </TouchableOpacity>
 
+        <TouchableOpacity style={commanStyles.buttonSocial} onPress={()=>instagramLogin.show()}>
+            <View style={commanStyles.row}>
+                <Feather name={'instagram'} size={17} color={'black'} />
+                <Text style={commanStyles.blacktext}> Login with Instagram</Text>
+            </View>
+        </TouchableOpacity> 
       </View>
 
         <Animatable.View animation={'fadeInUpBig'} delay={1000} style={commanStyles.footer}>
