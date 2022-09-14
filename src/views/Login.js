@@ -368,7 +368,7 @@ export default function Login() {
                     // ref={instagramLogin }
                     appId='5581786595209655'
                     appSecret='85cd36f4f7f53f474c7db7ccf441251f'
-                    redirectUrl='your-redirect-Url'
+                    redirectUrl='https://github.com/'
                     scopes={['user_profile', 'user_media']}
                     onLoginSuccess={()=>setIgToken()}
                     onLoginFailure={(data) => console.log(data)}
